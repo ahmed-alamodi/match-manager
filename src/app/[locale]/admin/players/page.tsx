@@ -176,7 +176,7 @@ export default function PlayersPage() {
                     </span>
                   </div>
                 </div>
-                
+
                 <Button
                   variant="ghost"
                   size="icon"

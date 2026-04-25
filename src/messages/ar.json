@@ -12,6 +12,14 @@
     "loginSubtitle": "سجل الدخول لإدارة فريقك",
     "emailLabel": "البريد الإلكتروني",
     "emailPlaceholder": "admin@example.com",
+    "identifierLabel": "البريد الإلكتروني أو رقم الهاتف",
+    "identifierPlaceholder": "email@example.com أو 966+...",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جارٍ تسجيل الدخول…",
+    "signInWithGoogle": "المتابعة عبر Google",
+    "orDivider": "أو",
     "sendMagicLink": "إرسال رابط الدخول",
     "checkEmail": "تحقق من بريدك الإلكتروني للحصول على رابط الدخول",
     "playerLogin": "دخول اللاعب",
@@ -25,7 +33,9 @@
     "demoCodes": "رموز تجريبية",
     "switchToPlayer": "عرض اللاعب",
     "switchToAdmin": "عرض الإدارة",
-    "enterPin": "أدخل رمز PIN الإداري للمتابعة"
+    "enterPin": "أدخل رمز PIN الإداري للمتابعة",
+    "loginFailed": "فشل تسجيل الدخول. يرجى التحقق من بياناتك.",
+    "invalidInput": "يرجى إدخال بريد إلكتروني أو رقم هاتف صالح."
   },
   "nav": {
     "dashboard": "الرئيسية",

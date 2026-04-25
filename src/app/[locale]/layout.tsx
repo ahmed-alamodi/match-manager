@@ -1,5 +1,6 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next"
 import "../globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -43,6 +44,7 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <ThemeProvider>
+          <Analytics />
           <QueryProvider>
             <NextIntlClientProvider locale={locale} messages={messages}>
               <TooltipProvider>

@@ -12,6 +12,14 @@
     "loginSubtitle": "Sign in to manage your team",
     "emailLabel": "Email Address",
     "emailPlaceholder": "admin@example.com",
+    "identifierLabel": "Email or Phone Number",
+    "identifierPlaceholder": "email@example.com or +966...",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "signIn": "Sign In",
+    "signingIn": "Signing In…",
+    "signInWithGoogle": "Continue with Google",
+    "orDivider": "or",
     "sendMagicLink": "Send Magic Link",
     "checkEmail": "Check your email for the login link",
     "playerLogin": "Player Login",
@@ -25,7 +33,9 @@
     "demoCodes": "Demo codes",
     "switchToPlayer": "Player View",
     "switchToAdmin": "Admin View",
-    "enterPin": "Enter admin PIN to continue"
+    "enterPin": "Enter admin PIN to continue",
+    "loginFailed": "Login failed. Please check your credentials.",
+    "invalidInput": "Please enter a valid email or phone number."
   },
   "nav": {
     "dashboard": "Dashboard",

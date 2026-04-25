@@ -26,3 +26,25 @@ export const authSchema = z.object({
 });
 
 export type AuthFormValues = z.infer<typeof authSchema>;
+
+// ── Login schema: accepts either an email or phone number + password ──
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^\+?[0-9]{7,15}$/;
+
+export const loginSchema = z.object({
+  identifier: z
+    .string()
+    .min(1, "Email or phone number is required")
+    .refine(
+      (val) => emailRegex.test(val) || phoneRegex.test(val),
+      "Please enter a valid email address or phone number"
+    ),
+  password: z.string().min(6, "Password must be at least 6 characters"),
+});
+
+export type LoginFormValues = z.infer<typeof loginSchema>;
+
+/** Helper to determine if the identifier is an email */
+export function isEmail(identifier: string): boolean {
+  return emailRegex.test(identifier);
+}
